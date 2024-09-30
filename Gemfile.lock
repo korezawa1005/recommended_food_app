@@ -149,6 +149,9 @@ GEM
       ast (~> 2.4.1)
       racc
     pg (1.5.8)
+    pluginator (1.5.0)
+    pre-commit (0.40.0)
+      pluginator (~> 1.5)
     pry (0.14.2)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -281,10 +284,12 @@ DEPENDENCIES
   importmap-rails
   jbuilder
   pg (~> 1.1)
+  pre-commit
   pry-byebug
   pry-rails
   puma (>= 5.0)
   rails (~> 7.2.1)
+  rubocop
   rubocop-rails-omakase
   sprockets-rails
   stimulus-rails
