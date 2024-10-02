@@ -40,3 +40,13 @@ module RecommendedFoodApp
     config.generators.system_tests = nil
   end
 end
+
+module LikeApp
+  class Application < Rails::Application
+    config.load_defaults 7.0
+    # ***** 以下を追加 *****
+    config.i18n.default_locale = :ja
+    config.active_record.default_timezone = :local
+    config.time_zone = "Asia/Tokyo"
+  end
+end
