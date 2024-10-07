@@ -20,7 +20,9 @@
   <body>
     <% if user_signed_in? %>
       <%= link_to "アカウント編集", "/users/edit" %>
-      <%= link_to 'ログアウト', destroy_user_session_path, data: { turbo_method: :delete } %>
+      <%= link_to 'ログアウト', "/users/sign_out", data: { turbo_method: :delete } %>
+      <%= link_to "一覧ページ", "/" %>
+      <%= link_to "新規投稿ページ", "/foods/new" %>
       <%= current_user.email %>
     <% else %>
       <%= link_to "ログイン", "/users/sign_in" %> 
