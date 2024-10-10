@@ -4,6 +4,8 @@
     <%= form.text_field :name, required: true %>
   </div>
   <div>
+    <%= form.file_field :avatar, accept: "image/png,image/jpeg,image/gif" %>
+  <div>
     <label for="name">コメント</label>
     <%= form.text_area :comment %>
   </div>
