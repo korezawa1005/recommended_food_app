@@ -13,6 +13,8 @@ ja:
         name: 料理名
         comment: コメント
         user: ユーザー
+        title: タイトル
+        avatar: 画像
   views:
     pagination:
       first: 最初
