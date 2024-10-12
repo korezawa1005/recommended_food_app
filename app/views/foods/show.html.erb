@@ -1,6 +1,7 @@
 <h1>投稿詳細</h1>
 <p>【メールアドレス】 <%= @food.user.email %></p>
 <p>【料理名】 <%= @food.name %></p>
+<%= render "like", food: @food %>
 <% if @food.avatar.attached? %>
   <div>
     <%= image_tag @food.avatar %>
