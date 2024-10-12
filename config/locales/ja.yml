@@ -3,6 +3,7 @@ ja:
     models:
       user: ユーザー
       food: 食べ物
+      like: いいね
     attributes:
       user:
         name: ユーザー
@@ -15,6 +16,18 @@ ja:
         user: ユーザー
         title: タイトル
         avatar: 画像
+      like:
+        user: ユーザー
+        user_id: ユーザー
+        food: 料理
+    errors:
+      models:
+        like:
+          attributes:
+            base:
+              owner_forbidden: 自分の投稿にいいねはできません
+            user_id:
+              duplicated: は同じ投稿に複数回いいねはできません
   views:
     pagination:
       first: 最初
